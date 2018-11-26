@@ -57,6 +57,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenu1.setText("Arquivo");
 
+        btnSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_MASK));
         btnSair.setText("Sair");
         btnSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,7 +137,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
-        // TODO add your handling code here:
+       
+        
+        TelaPrincipal.this.dispose();
+        
+        
     }//GEN-LAST:event_btnSairActionPerformed
 
     private void menuCidadeListarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCidadeListarActionPerformed
